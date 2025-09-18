@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://tenwq.github.io/scp-upload-cli/sitemap.xml
+
+# Disallow crawling of development files
+Disallow: /node_modules/
+Disallow: /.vitepress/
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# Allow crawling of documentation
+Allow: /guide/
+Allow: /contact
+Allow: /assets/
+
+# Crawl delay (optional)
+Crawl-delay: 1

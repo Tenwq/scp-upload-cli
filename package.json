@@ -2,23 +2,45 @@
   "name": "scp-upload-cli",
   "version": "1.0.0",
   "description": "A convenient CLI tool for uploading files to remote servers via SCP protocol",
-  "main": "index.js",
+  "main": "bin/cli.js",
   "bin": {
-    "scp-upload": "./bin/cli.js"
+    "scp-upload": "./bin/cli.js",
+    "scp-upload-cli": "./bin/cli.js"
   },
   "scripts": {
     "start": "node bin/cli.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No tests specified\" && exit 0"
   },
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "scp",
     "upload",
     "cli",
     "file-transfer",
-    "ssh"
+    "ssh",
+    "remote",
+    "server",
+    "deployment",
+    "nodejs"
   ],
-  "author": "Kee Wahn",
+  "author": {
+    "name": "Kee Wahn",
+    "email": "your-email@example.com"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Tenwq/scp-upload-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tenwq/scp-upload-cli/issues"
+  },
+  "homepage": "https://github.com/Tenwq/scp-upload-cli#readme",
   "dependencies": {
     "inquirer": "^8.2.6",
     "node-scp": "^0.0.15",
@@ -30,5 +52,9 @@
   },
   "engines": {
     "node": ">=14.0.0"
+  },
+  "preferGlobal": true,
+  "publishConfig": {
+    "access": "public"
   }
 }

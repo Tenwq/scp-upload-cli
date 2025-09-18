@@ -1,0 +1,36 @@
+{
+  "name": "scp-upload-cli-docs",
+  "version": "1.0.0",
+  "description": "SCP文件上传工具官方文档站点",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "docs:serve": "vitepress serve"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "vitepress": "^1.0.0-rc.31"
+  },
+  "dependencies": {
+    "markdown-it-mathjax3": "^4.3.2",
+    "vue": "^3.3.8"
+  },
+  "keywords": [
+    "scp",
+    "file-upload",
+    "ssh",
+    "cli-tool",
+    "documentation",
+    "vitepress"
+  ],
+  "author": "Tenwq",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Tenwq/scp-upload-cli.git",
+    "directory": "docs"
+  },
+  "homepage": "https://tenwq.github.io/scp-upload-cli"
+}
