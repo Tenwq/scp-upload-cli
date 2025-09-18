@@ -1,6 +1,6 @@
 {
   "name": "scp-upload-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A convenient CLI tool for uploading files to remote servers via SCP protocol",
   "main": "bin/cli.js",
   "bin": {
@@ -9,7 +9,8 @@
   },
   "scripts": {
     "start": "node bin/cli.js",
-    "test": "echo \"No tests specified\" && exit 0"
+    "test": "echo \"No tests specified\" && exit 0",
+    "publish": "npm publish"
   },
   "files": [
     "bin/",
@@ -40,7 +41,7 @@
   "bugs": {
     "url": "https://github.com/Tenwq/scp-upload-cli/issues"
   },
-  "homepage": "https://github.com/Tenwq/scp-upload-cli#readme",
+  "homepage": "https://tenwq.github.io/scp-upload-cli/",
   "dependencies": {
     "inquirer": "^8.2.6",
     "node-scp": "^0.0.15",
